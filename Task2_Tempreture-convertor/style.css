@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap');
+
+*{
+    font-family: 'Inclusive Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    font-weight:bolder;
+}
+body{
+    background: url("/img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+.main{
+    width: 65%;
+    height: 500px;
+    border: 3px solid rgb(121, 168, 197);
+    margin-top: 70px;
+    margin-left: 18%;
+    border-radius: 15px;
+    display: flex;
+}
+h2{
+    color: rgb(181, 234, 235);
+    margin: 50px ;
+    font-size:28px;
+}
+
+.main > .left{
+    backdrop-filter: blur(3px);
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    height: 100%;
+
+}
+.main > .right{
+    
+    margin-left: 0%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(121, 168, 197);
+}
+
+#number , #convertor{
+    text-align: left;
+    padding: 30px 50px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    font-weight: 200;
+    font-size: 18px;
+}
+#number > div > input{
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.202);
+    width: 84%;
+    padding: 5px 0%;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+#number > div > input::placeholder{
+    color: rgba(255, 255, 255, 0.734);
+    font-weight: 100;
+}
+#number > div > select{
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.202);
+    padding: 5px 0px;
+    color: rgba(0, 0, 0, 0.566);
+    border-radius: 5px;
+    padding-right: 6px;
+}
+#number > div > select:focus{
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+#number > div > input:focus{
+    outline:none;
+}
+
+#convertor > select{
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.202);
+    width: 100%;
+    padding: 5px 0%;
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0.722);
+    border-radius: 5px;
+}
+#convertor > select:focus{
+    outline: none;
+}
+
+button{
+    padding: 12px;
+    width: 30%;
+    align-self: center;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    background-color: rgb(51, 124, 155);
+    transition: 200ms;
+}
+
+button:hover{
+    background: rgba(51, 124, 155, 0.807);
+}
+
+#ans{
+    margin: 0px;
+    padding: 0px;
+
+   font-size: 75px;
+    width: 100%;
+    text-align: center;
+    height: 100px;
+    color: white;
+}
